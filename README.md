@@ -15,10 +15,14 @@ Create enviroments in "edit edviroment variables for your account" on your syste
 
 ## Import necessary packages
 import os
+
 import findspark
 ### start new spark session
+
 from pyspark.sql import SparkSession
+
 from pyspark.sql.functions import *
+
 spark = SparkSession.builder.appName('session_name').getOrCreate()
 #### read csv file into dataframe
 df=spark.read.format('csv').load('file path',header=True)
