@@ -1,11 +1,18 @@
 # Spark-delta-table
 #setup instructions :
+
 First install hadoop, java , pyspark packages and create enviroments. you can install packages by entering following in notebook
+
 !apt-get install openjdk-11-jdk-headless -qq > /dev/null
+
 !wget -q https://downloads.apache.org/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
+
 !tar xf spark-3.1.2-bin-hadoop3.2.tgz
+
 !pip -q install findspark
+
 Create enviroments in "edit edviroment variables for your account" on your system
+
 ## Import necessary packages
 import os
 import findspark
